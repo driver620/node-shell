@@ -1,8 +1,7 @@
-let pwdCommand = function(cmd){
-   if (cmd === 'pwd'){
-       console.log('cmd', cmd, 'HIII');
+const pwdCommand = function(cmd){
        process.stdout.write(process.cwd());
-   }
+       process.stdout.write('prompt > ')
+
 };
 
 // module.exports.pwdCommand = cmd => {
@@ -12,6 +11,6 @@ let pwdCommand = function(cmd){
 //     }
 // };
 
-module.exports.pwdCommand = pwdCommand;
+module.exports.pwdCmd = pwdCommand;
 
 console.log('changes')
